@@ -10,9 +10,9 @@ function ProfileInfo({ user }) {
             : `https://drive.google.com/uc?export=view&id=${user.photo} `
         }
         alt="Profile Photo"
-        className="object-cover w-24 h-24 border-2 border-gray-300 rounded-full"
-        width={500}
-        height={500}
+        className="object-cover border-2 border-gray-300 rounded-full "
+        width={200}
+        height={200}
         quality={90}
       />
       <div>

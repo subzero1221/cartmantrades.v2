@@ -1,11 +1,26 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      "images.cryptocompare.com",
-      "resources.cryptocompare.com",
-      "drive.google.com",
-    ], // Add your allowed image domains here
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.cryptocompare.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "resources.cryptocompare.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "drive.google.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
   },
 };
 
