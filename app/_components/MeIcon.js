@@ -10,7 +10,6 @@ export const revalidate = 0;
 
 function MeIcon({ user, token }) {
   const { userToken, userData, updateUser } = useUser();
-  console.log(userToken.name);
 
   const handleLogOut = async () => {
     await logOut();
@@ -20,7 +19,7 @@ function MeIcon({ user, token }) {
 
   // Fetch userData based on the token
 
-  console.log(userToken);
+  
 
   return token?.name === "jwt" ? (
     <div className="flex items-center space-x-2">
@@ -35,7 +34,7 @@ function MeIcon({ user, token }) {
             alt={userData.name}
             width={80}
             height={80}
-            className="rounded-e-full"
+            className="object-cover rounded-e-full"
             quality={90}
           />
         </div>
