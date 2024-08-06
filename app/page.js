@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -7,7 +6,7 @@ export default function Home() {
       <h1 className="mb-4 text-3xl font-bold text-center text-gray-800">
         Dive into crypto - Your adventure in digital finance begins here.
       </h1>
-      <Image src="/cartman.png" alt="Placeholder" width={600} height={400} />
+      <img src="/icon.png" alt="Placeholder" className="h-64 w-76" />
       <p className="max-w-3xl mt-4 text-lg text-center text-gray-600">
         At Cartman Trades, we are dedicated to simplifying the world of
         cryptocurrency. Our platform offers cutting-edge insights, tools, and

@@ -45,12 +45,10 @@ export default async function RootLayout({ children }) {
             <div className="container flex items-center justify-between p-2 mx-auto">
               <Link href="/" className="flex items-center">
                 <div className="relative w-24 h-24">
-                  <Image
-                    src="/cartman.png"
+                  <img
+                    src="/icon.png"
                     alt="Logo"
-                    layout="fill"
-                    objectFit="contain"
-                    className="transition-transform transform rounded-full shadow-lg hover:scale-105 hover:bg-blue-500"
+                    className="w-24 h-16 mt-4 transition-transform transform rounded-full shadow-lg hover:scale-105 hover:bg-blue-500"
                   />
                 </div>
               </Link>
