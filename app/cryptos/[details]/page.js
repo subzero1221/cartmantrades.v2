@@ -1,4 +1,4 @@
-import CryptoDetails from "./../../_components/cryptoDetails";
+import CryptoDetails from "@/app/_components/CryptoDetails";
 
 async function Details({ params }) {
   const name = params.details;
