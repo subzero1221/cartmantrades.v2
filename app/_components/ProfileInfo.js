@@ -7,7 +7,7 @@ function ProfileInfo({ user }) {
         src={
           user.photo === "default.jpg"
             ? "/default.jpg"
-            : `https://drive.google.com/uc?export=view&id=${user.photo} `
+            : `https://drive.google.com/uc?export=view&id=${user.photo}`
         }
         alt="Profile Photo"
         className="object-cover border-2 border-gray-300 rounded-full "

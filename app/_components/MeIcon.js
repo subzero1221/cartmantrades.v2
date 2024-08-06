@@ -19,8 +19,6 @@ function MeIcon({ user, token }) {
 
   // Fetch userData based on the token
 
-  
-
   return token?.name === "jwt" ? (
     <div className="flex items-center space-x-2">
       <Link href="/profile" className="flex items-center space-x-3">
@@ -29,7 +27,7 @@ function MeIcon({ user, token }) {
             src={
               user.photo === "default.jpg"
                 ? "/default.jpg"
-                : `https://drive.google.com/uc?export=view&id=${user.photo} `
+                : `https://drive.google.com/uc?export=view&id=${user.photo}`
             }
             alt={userData.name}
             width={80}
